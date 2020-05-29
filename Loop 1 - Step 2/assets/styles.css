@@ -1,4 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background: blue;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  background: url("./img/background.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.payment-container {
+  background: #fff;
+  width: 320px;
+  height: 278px;
+  border-radius: 3px;
+}
+
+.payment-header {
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+.payment-header .indicator {
+  width: 5px;
+  height: 5px;
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.payment-header .indicator::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  background: #c2c2c2;
+  border-radius: inherit;
+}
+
+.payment-header .indicator::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 10px;
+  background: #e0e0e0;
+  border-radius: inherit;
+}
+
+.payment-header .header-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.payment-body .payment-option {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 30px;
+  border-top: 1px solid #eeeded;
+  -webkit-transition: background 0.4s linear;
+  transition: background 0.4s linear;
+}
+
+.payment-body .payment-option:hover {
+  background: #eeeeed;
+}
+
+.payment-body .payment-option img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.payment-body .payment-option img.check {
+  width: 20px;
+  margin-left: auto;
+}
+
+.payment-body .checked {
+  color: #0f0f0f;
+}
+
+.next {
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+  color: #fff;
+  height: 50px;
+  background: #598bdd;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.next .text {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.next img {
+  width: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
